@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://arktik779.github.io/wokanoka-site/sitemap.xml
+Sitemap: https://wokanoka.github.io/sitemap.xml
