@@ -129,7 +129,6 @@ p { margin: 0 0 1em; }
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  gap: 18px;
   justify-self: start;
   align-self: end;              /* logo sits on the orange line: the neck cut touches it */
   --brand-pad: 10px;
@@ -144,14 +143,6 @@ p { margin: 0 0 1em; }
   transition: transform .2s ease;
 }
 .brand:hover img { transform: rotate(-4deg); }
-/* Wordmark shares one horizontal line with the menu (header centre) */
-.brand-name {
-  font-family: var(--font-display);
-  font-size: 1.9rem;
-  line-height: 1;
-  letter-spacing: .06em;
-  transform: translateY(calc(var(--brand-pad) / -2));
-}
 
 .site-nav ul {
   list-style: none;
@@ -181,9 +172,8 @@ p { margin: 0 0 1em; }
 @media (max-width: 720px) {
   :root { --header-h: 80px; }
   .header-inner { grid-template-columns: auto 1fr; }
-  .brand { gap: 12px; --brand-pad: 8px; }
+  .brand { --brand-pad: 8px; }
   .brand img { height: 72px; }
-  .brand-name { font-size: 1.5rem; }
 
   /* Without JavaScript the menu stays visible as a compact row */
   .site-nav { justify-self: end; }
